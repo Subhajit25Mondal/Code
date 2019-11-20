@@ -110,6 +110,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named gcd
+
+# Build rule for target.
+gcd: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 gcd
+.PHONY : gcd
+
+# fast build rule for target.
+gcd/fast:
+	$(MAKE) -f CMakeFiles\gcd.dir\build.make CMakeFiles/gcd.dir/build
+.PHONY : gcd/fast
+
+#=============================================================================
 # Target rules for targets named c1
 
 # Build rule for target.
@@ -134,6 +147,33 @@ guess: cmake_check_build_system
 guess/fast:
 	$(MAKE) -f CMakeFiles\guess.dir\build.make CMakeFiles/guess.dir/build
 .PHONY : guess/fast
+
+gcd.obj: gcd.cpp.obj
+
+.PHONY : gcd.obj
+
+# target to build an object file
+gcd.cpp.obj:
+	$(MAKE) -f CMakeFiles\gcd.dir\build.make CMakeFiles/gcd.dir/gcd.cpp.obj
+.PHONY : gcd.cpp.obj
+
+gcd.i: gcd.cpp.i
+
+.PHONY : gcd.i
+
+# target to preprocess a source file
+gcd.cpp.i:
+	$(MAKE) -f CMakeFiles\gcd.dir\build.make CMakeFiles/gcd.dir/gcd.cpp.i
+.PHONY : gcd.cpp.i
+
+gcd.s: gcd.cpp.s
+
+.PHONY : gcd.s
+
+# target to generate assembly for a file
+gcd.cpp.s:
+	$(MAKE) -f CMakeFiles\gcd.dir\build.make CMakeFiles/gcd.dir/gcd.cpp.s
+.PHONY : gcd.cpp.s
 
 guess.obj: guess.cpp.obj
 
@@ -195,10 +235,14 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... gcd
 	@echo ... c1
 	@echo ... guess
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... gcd.obj
+	@echo ... gcd.i
+	@echo ... gcd.s
 	@echo ... guess.obj
 	@echo ... guess.i
 	@echo ... guess.s
