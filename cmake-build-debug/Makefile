@@ -122,13 +122,26 @@ c1/fast:
 	$(MAKE) -f CMakeFiles\c1.dir\build.make CMakeFiles/c1.dir/build
 .PHONY : c1/fast
 
+#=============================================================================
+# Target rules for targets named guess
+
+# Build rule for target.
+guess: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 guess
+.PHONY : guess
+
+# fast build rule for target.
+guess/fast:
+	$(MAKE) -f CMakeFiles\guess.dir\build.make CMakeFiles/guess.dir/build
+.PHONY : guess/fast
+
 guess.obj: guess.cpp.obj
 
 .PHONY : guess.obj
 
 # target to build an object file
 guess.cpp.obj:
-	$(MAKE) -f CMakeFiles\c1.dir\build.make CMakeFiles/c1.dir/guess.cpp.obj
+	$(MAKE) -f CMakeFiles\guess.dir\build.make CMakeFiles/guess.dir/guess.cpp.obj
 .PHONY : guess.cpp.obj
 
 guess.i: guess.cpp.i
@@ -137,7 +150,7 @@ guess.i: guess.cpp.i
 
 # target to preprocess a source file
 guess.cpp.i:
-	$(MAKE) -f CMakeFiles\c1.dir\build.make CMakeFiles/c1.dir/guess.cpp.i
+	$(MAKE) -f CMakeFiles\guess.dir\build.make CMakeFiles/guess.dir/guess.cpp.i
 .PHONY : guess.cpp.i
 
 guess.s: guess.cpp.s
@@ -146,7 +159,7 @@ guess.s: guess.cpp.s
 
 # target to generate assembly for a file
 guess.cpp.s:
-	$(MAKE) -f CMakeFiles\c1.dir\build.make CMakeFiles/c1.dir/guess.cpp.s
+	$(MAKE) -f CMakeFiles\guess.dir\build.make CMakeFiles/guess.dir/guess.cpp.s
 .PHONY : guess.cpp.s
 
 main.obj: main.cpp.obj
@@ -183,6 +196,7 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... c1
+	@echo ... guess
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... guess.obj

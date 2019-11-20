@@ -3,4 +3,5 @@ project(c1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(c1 main.cpp guess.cpp)
+add_executable(c1 main.cpp)
+add_executable(guess guess.cpp)
