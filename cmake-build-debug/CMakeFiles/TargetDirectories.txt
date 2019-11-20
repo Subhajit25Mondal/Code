@@ -2,4 +2,5 @@ C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug/CMakeFiles/gcd.dir
 C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug/CMakeFiles/c1.dir
 C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug/CMakeFiles/guess.dir
 C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug/CMakeFiles/single_file_exec.dir
 C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

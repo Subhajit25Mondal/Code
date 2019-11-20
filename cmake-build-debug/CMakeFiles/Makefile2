@@ -55,6 +55,7 @@ CMAKE_BINARY_DIR = C:\Users\Lenovo\Desktop\Dev\c1\cmake-build-debug
 all: CMakeFiles/gcd.dir/all
 all: CMakeFiles/c1.dir/all
 all: CMakeFiles/guess.dir/all
+all: CMakeFiles/single_file_exec.dir/all
 
 .PHONY : all
 
@@ -62,6 +63,7 @@ all: CMakeFiles/guess.dir/all
 clean: CMakeFiles/gcd.dir/clean
 clean: CMakeFiles/c1.dir/clean
 clean: CMakeFiles/guess.dir/clean
+clean: CMakeFiles/single_file_exec.dir/clean
 
 .PHONY : clean
 
@@ -150,6 +152,33 @@ guess: CMakeFiles/guess.dir/rule
 CMakeFiles/guess.dir/clean:
 	$(MAKE) -f CMakeFiles\guess.dir\build.make CMakeFiles/guess.dir/clean
 .PHONY : CMakeFiles/guess.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/single_file_exec.dir
+
+# All Build rule for target.
+CMakeFiles/single_file_exec.dir/all:
+	$(MAKE) -f CMakeFiles\single_file_exec.dir\build.make CMakeFiles/single_file_exec.dir/depend
+	$(MAKE) -f CMakeFiles\single_file_exec.dir\build.make CMakeFiles/single_file_exec.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Lenovo\Desktop\Dev\c1\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target single_file_exec"
+.PHONY : CMakeFiles/single_file_exec.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/single_file_exec.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Lenovo\Desktop\Dev\c1\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/single_file_exec.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Lenovo\Desktop\Dev\c1\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/single_file_exec.dir/rule
+
+# Convenience name for target.
+single_file_exec: CMakeFiles/single_file_exec.dir/rule
+
+.PHONY : single_file_exec
+
+# clean rule for target.
+CMakeFiles/single_file_exec.dir/clean:
+	$(MAKE) -f CMakeFiles\single_file_exec.dir\build.make CMakeFiles/single_file_exec.dir/clean
+.PHONY : CMakeFiles/single_file_exec.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

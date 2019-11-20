@@ -148,6 +148,46 @@ guess/fast:
 	$(MAKE) -f CMakeFiles\guess.dir\build.make CMakeFiles/guess.dir/build
 .PHONY : guess/fast
 
+#=============================================================================
+# Target rules for targets named single_file_exec
+
+# Build rule for target.
+single_file_exec: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 single_file_exec
+.PHONY : single_file_exec
+
+# fast build rule for target.
+single_file_exec/fast:
+	$(MAKE) -f CMakeFiles\single_file_exec.dir\build.make CMakeFiles/single_file_exec.dir/build
+.PHONY : single_file_exec/fast
+
+animals.obj: animals.cpp.obj
+
+.PHONY : animals.obj
+
+# target to build an object file
+animals.cpp.obj:
+	$(MAKE) -f CMakeFiles\single_file_exec.dir\build.make CMakeFiles/single_file_exec.dir/animals.cpp.obj
+.PHONY : animals.cpp.obj
+
+animals.i: animals.cpp.i
+
+.PHONY : animals.i
+
+# target to preprocess a source file
+animals.cpp.i:
+	$(MAKE) -f CMakeFiles\single_file_exec.dir\build.make CMakeFiles/single_file_exec.dir/animals.cpp.i
+.PHONY : animals.cpp.i
+
+animals.s: animals.cpp.s
+
+.PHONY : animals.s
+
+# target to generate assembly for a file
+animals.cpp.s:
+	$(MAKE) -f CMakeFiles\single_file_exec.dir\build.make CMakeFiles/single_file_exec.dir/animals.cpp.s
+.PHONY : animals.cpp.s
+
 gcd.obj: gcd.cpp.obj
 
 .PHONY : gcd.obj
@@ -239,7 +279,11 @@ help:
 	@echo ... c1
 	@echo ... guess
 	@echo ... edit_cache
+	@echo ... single_file_exec
 	@echo ... rebuild_cache
+	@echo ... animals.obj
+	@echo ... animals.i
+	@echo ... animals.s
 	@echo ... gcd.obj
 	@echo ... gcd.i
 	@echo ... gcd.s
