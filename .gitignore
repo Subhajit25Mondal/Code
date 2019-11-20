@@ -1,3 +1,5 @@
+cmake-build-debug/
+
 # Prerequisites
 *.d
 
@@ -31,4 +33,3 @@
 *.out
 *.app
 
-cmake-build-debug/
