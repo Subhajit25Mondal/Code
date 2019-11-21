@@ -136,6 +136,19 @@ c1/fast:
 .PHONY : c1/fast
 
 #=============================================================================
+# Target rules for targets named animals
+
+# Build rule for target.
+animals: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 animals
+.PHONY : animals
+
+# fast build rule for target.
+animals/fast:
+	$(MAKE) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/build
+.PHONY : animals/fast
+
+#=============================================================================
 # Target rules for targets named guess
 
 # Build rule for target.
@@ -167,7 +180,7 @@ animals.obj: animals.cpp.obj
 
 # target to build an object file
 animals.cpp.obj:
-	$(MAKE) -f CMakeFiles\single_file_exec.dir\build.make CMakeFiles/single_file_exec.dir/animals.cpp.obj
+	$(MAKE) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/animals.cpp.obj
 .PHONY : animals.cpp.obj
 
 animals.i: animals.cpp.i
@@ -176,7 +189,7 @@ animals.i: animals.cpp.i
 
 # target to preprocess a source file
 animals.cpp.i:
-	$(MAKE) -f CMakeFiles\single_file_exec.dir\build.make CMakeFiles/single_file_exec.dir/animals.cpp.i
+	$(MAKE) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/animals.cpp.i
 .PHONY : animals.cpp.i
 
 animals.s: animals.cpp.s
@@ -185,7 +198,7 @@ animals.s: animals.cpp.s
 
 # target to generate assembly for a file
 animals.cpp.s:
-	$(MAKE) -f CMakeFiles\single_file_exec.dir\build.make CMakeFiles/single_file_exec.dir/animals.cpp.s
+	$(MAKE) -f CMakeFiles\animals.dir\build.make CMakeFiles/animals.dir/animals.cpp.s
 .PHONY : animals.cpp.s
 
 gcd.obj: gcd.cpp.obj
@@ -269,6 +282,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\c1.dir\build.make CMakeFiles/c1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+reverse_and_process.obj: reverse_and_process.cpp.obj
+
+.PHONY : reverse_and_process.obj
+
+# target to build an object file
+reverse_and_process.cpp.obj:
+	$(MAKE) -f CMakeFiles\single_file_exec.dir\build.make CMakeFiles/single_file_exec.dir/reverse_and_process.cpp.obj
+.PHONY : reverse_and_process.cpp.obj
+
+reverse_and_process.i: reverse_and_process.cpp.i
+
+.PHONY : reverse_and_process.i
+
+# target to preprocess a source file
+reverse_and_process.cpp.i:
+	$(MAKE) -f CMakeFiles\single_file_exec.dir\build.make CMakeFiles/single_file_exec.dir/reverse_and_process.cpp.i
+.PHONY : reverse_and_process.cpp.i
+
+reverse_and_process.s: reverse_and_process.cpp.s
+
+.PHONY : reverse_and_process.s
+
+# target to generate assembly for a file
+reverse_and_process.cpp.s:
+	$(MAKE) -f CMakeFiles\single_file_exec.dir\build.make CMakeFiles/single_file_exec.dir/reverse_and_process.cpp.s
+.PHONY : reverse_and_process.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -277,6 +317,7 @@ help:
 	@echo ... depend
 	@echo ... gcd
 	@echo ... c1
+	@echo ... animals
 	@echo ... guess
 	@echo ... edit_cache
 	@echo ... single_file_exec
@@ -293,6 +334,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... reverse_and_process.obj
+	@echo ... reverse_and_process.i
+	@echo ... reverse_and_process.s
 .PHONY : help
 
 

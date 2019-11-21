@@ -105,6 +105,50 @@
 					<DistClean command="D:/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="animals">
+				<Option output="C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug/animals.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"/>
+					<Add directory="D:/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/backward"/>
+					<Add directory="D:/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include"/>
+					<Add directory="D:/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include"/>
+					<Add directory="D:/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed"/>
+					<Add directory="D:/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug/Makefile&quot;  VERBOSE=1 animals"/>
+					<CompileFile command="D:/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="animals/fast">
+				<Option output="C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug/animals.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"/>
+					<Add directory="D:/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/backward"/>
+					<Add directory="D:/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include"/>
+					<Add directory="D:/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include"/>
+					<Add directory="D:/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed"/>
+					<Add directory="D:/Dev-Cpp/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug/Makefile&quot;  VERBOSE=1 animals/fast"/>
+					<CompileFile command="D:/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Dev-Cpp/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="guess">
 				<Option output="C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug/guess.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/Lenovo/Desktop/Dev/c1/cmake-build-debug"/>
@@ -215,7 +259,7 @@
 			</Target>
 		</Build>
 		<Unit filename="C:/Users/Lenovo/Desktop/Dev/c1/animals.cpp">
-			<Option target="single_file_exec"/>
+			<Option target="animals"/>
 		</Unit>
 		<Unit filename="C:/Users/Lenovo/Desktop/Dev/c1/gcd.cpp">
 			<Option target="gcd"/>
@@ -225,6 +269,9 @@
 		</Unit>
 		<Unit filename="C:/Users/Lenovo/Desktop/Dev/c1/main.cpp">
 			<Option target="c1"/>
+		</Unit>
+		<Unit filename="C:/Users/Lenovo/Desktop/Dev/c1/reverse and process.cpp">
+			<Option target="single_file_exec"/>
 		</Unit>
 		<Unit filename="C:/Users/Lenovo/Desktop/Dev/c1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
